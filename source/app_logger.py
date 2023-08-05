@@ -1,10 +1,12 @@
 import logging
+from pathlib import Path
 
+file_name = str(Path(r'C:\Users\email\Downloads').parent) + "/app_logs.log"
 logging.basicConfig(
     format="%(asctime)s %(message)s",
-    filename="/home/jayaram/app_data_loader/example.log",
+    filename=file_name,
     encoding="utf-8",
-    filemode="w",
+    filemode="a",
     level=logging.DEBUG,
     datefmt="%m/%d/%Y %I:%M:%S %p",
 )
