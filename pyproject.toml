@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "app-data-loader"
+version = "0.1.0"
+description = ""
+authors = ["jayaram209 <user.email=jairamc188@gmail.com>"]
+readme = "README.md"
+packages = [{include = "app_data_loader"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+flake8 = "^0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
